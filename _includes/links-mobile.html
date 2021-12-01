@@ -1,0 +1,5 @@
+<div class="link-wrapper-mobile" style="display: flex;justify-content: space-evenly;">
+	{% for social in site.social %}
+	<a href="{{social.url}}"><i class="fab {{social.class}}"></i> {{social.name}}</a>
+	{% endfor %}
+</div>
