@@ -23,7 +23,7 @@ email: vitorcesco@me.com
 description: >- # this means to ignore newlines until "baseurl:"
   Senior iOS Engineer touching people's lives through technology since 2010.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://vitorcesco.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.vitorcesco.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
