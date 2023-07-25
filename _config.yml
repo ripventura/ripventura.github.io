@@ -45,10 +45,8 @@ social:
   - name: GitHub
     url: "https://github.com/ripventura"
     class: fab fa-github
-  - name: Twitter
-    url: "https://twitter.com/vitorcesco"
-    class: fab fa-twitter
 resume_path: /resources/resume/VitorCesco-ENG.pdf
+helvault_support_form: "https://docs.google.com/forms/d/e/1FAIpQLSeKDaqJOwvw5VLmsjKFGMlHS41_heSTkAIZeVWDJwuWYLIOWg/viewform?embedded=true"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

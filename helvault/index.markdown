@@ -5,7 +5,20 @@
 layout: default
 ---
 
-# Support
-[Tap here](mailto:{{site.email}}) to contact our support team. 
+# Helvault Privacy
+You can view Helvault's Privacy Policy [here](/helvault/privacy).
 
-You can view our Privacy Policy [here](/helvault/privacy).
+# Helvault Support
+<html>
+	<body>
+		<iframe 
+		src="{{site.helvault_support_form}}"
+		width="640"
+		height="1000" 
+		frameborder="0" 
+		marginheight="0" 
+		marginwidth="0">
+			Loading…
+		</iframe>
+	</body>
+</html>
