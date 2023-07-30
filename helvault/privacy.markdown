@@ -4,7 +4,9 @@
 
 layout: default
 ---
-
+<html>
+	<head><link rel="stylesheet" href="style.css"></head>
+</html>
 # Privacy
 
 Helvault respects your right to privacy. This Privacy Policy explains who we are, how we collect, share and use personal information about you, and how you can exercise your privacy rights.
