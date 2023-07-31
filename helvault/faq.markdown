@@ -9,7 +9,7 @@ layout: default
 </html>
 
 # FAQ
-Below you'll find answers to common questions you may have about Helvault. If you need extra support consider [reaching us out](/helvault) or [joining our Discord server](https://discord.gg/WMWNpmcg35).
+Below you'll find answers to common questions you may have about Helvault. If you need extra support consider [reaching us out]({{site.helvault_support_form}}) or [joining our Discord server](https://discord.gg/WMWNpmcg35).
 
 {% assign titles = "" | split: "" %}
 {% assign descriptions = "" | split: "" %}
