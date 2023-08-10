@@ -1,7 +1,49 @@
+body {
+	background-color: #242E38;	
+	color: #FCFBFC;
+}
+
+a {
+	color: #7EA0C4;
+	text-decoration: none;
+}
+
 .sidebar {
 	display: none;
 }
+footer {
+	display: none;
+}
+section {
+	border: none;
+}
+
 section {
 	width: auto;
 	float: none;
+}
+
+.faq-body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.faq-collapse-item {
+	border: 1px solid rgba(252, 251, 252, 0.5);
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.faq-collapse-btn {
+	color: rgba(252, 251, 252, 0.8);
+	text-decoration: none;
+	font-weight: bolder;
+}
+.faq-collapse-btn:hover {
+	color: #7EA0C4;
+}
+
+.faq-collapse-content {
 }
