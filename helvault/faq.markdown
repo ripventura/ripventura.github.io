@@ -57,7 +57,7 @@ Below you'll find answers to common questions you may have about Helvault. If yo
 
 {% assign titles = titles | push: "I'm trying to import my cards via CSV but the app is not recognizing them... Why?" %}
 {% assign hrefs = hrefs | push: "import" %}
-{% assign descriptions = descriptions | push: "The may way of importing cards via CSV is using the Helvault format, which contains the following columns: extras, name, scryfall_id, quantity.<br/>You can also use other PRO formats such as Plain List, TCG Player, Deckbox and many others after purchasing the 'PRO Import and Export' feature." %}
+{% assign descriptions = descriptions | push: "The main way of importing cards via CSV is using the Helvault format, which contains the following columns: extras, name, scryfall_id, quantity.<br/>You can also use other PRO formats such as Plain List, TCG Player, Deckbox and many others after purchasing the 'PRO Import and Export' feature." %}
 
 
 {% assign titles = titles | push: "I'm trying to export my cards via CSV into another app/website but they don't recognize it... What can I do?" %}
