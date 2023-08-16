@@ -40,6 +40,11 @@ Below you'll find answers to common questions you may have about Helvault. If yo
 {% assign descriptions = descriptions | push: "No! The app will continue to work normally. The only change is that it will no longer receive updates." %}
 
 
+{% assign titles = titles | push: "Why my purchases from the Legacy app are not restored on the new app?" %}
+{% assign hrefs = hrefs | push: "restore" %}
+{% assign descriptions = descriptions | push: "As mentioned above, the Legacy app will continue to work normally, as is, so your purchases are and will always be yours. With that being said, by AppStore rules purchases cannot be carried over between apps. In case the new app is right for you, items will need to be purchased separately." %}
+
+
 {% assign titles = titles | push: "Why can't I add some cards in languages other than English?" %}
 {% assign hrefs = hrefs | push: "missingCards" %}
 {% assign descriptions = descriptions | push: "Helvault uses Scryfall as a provider for cards. Usually they prioritize adding cards first on the English language, meaning it may take some time until other languages such as Italian, Spanish, Japanese etc appear on Helvault.<br/>As a workaround you could keep the card in English on your collection and add a <code>tag</code> to it with the language name. This way you can still keep track of the cards that are represented by the English version instead of their printed version.<br/><br/>You could also <a href='https://scryfall.com/contact'>reach Scryfall directly</a> to get a sense of when your cards will be added." %}
