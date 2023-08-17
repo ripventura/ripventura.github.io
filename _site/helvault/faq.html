@@ -142,6 +142,12 @@
   
   
     <div class="faq-collapse-item">
+      <a class="faq-collapse-btn" data-bs-toggle="collapse" href="#migrate">How can I migrate my content from the Legacy app to the new one?</a>
+      <div class="faq-collapse-content collapse" id="migrate"><br />You can migrate your content (cards, binders and lists) from the Legacy app to the new one by doing the following:<br />1. Open the new Helvault app<br />2. On the 'Collections' area, go to Settings (three-dotted button on the top left corner)<br />3. Scroll down and tap 'Import from Helvault Legacy'<br /><br />That's it! Now you just need to follow on-screen instructions.</div>
+    </div>
+  
+  
+    <div class="faq-collapse-item">
       <a class="faq-collapse-btn" data-bs-toggle="collapse" href="#missingCards">Why can't I add some cards in languages other than English?</a>
       <div class="faq-collapse-content collapse" id="missingCards"><br />Helvault uses Scryfall as a provider for cards. Usually they prioritize adding cards first on the English language, meaning it may take some time until other languages such as Italian, Spanish, Japanese etc appear on Helvault.<br />As a workaround you could keep the card in English on your collection and add a <code>tag</code> to it with the language name. This way you can still keep track of the cards that are represented by the English version instead of their printed version.<br /><br />You could also <a href="https://scryfall.com/contact">reach Scryfall directly</a> to get a sense of when your cards will be added.</div>
     </div>
@@ -173,12 +179,18 @@
   
     <div class="faq-collapse-item">
       <a class="faq-collapse-btn" data-bs-toggle="collapse" href="#icloud">How does iCloud Sync work?</a>
-      <div class="faq-collapse-content collapse" id="icloud"><br />When you enable iCloud Sync by purchasing the 'iCloud Sync' feature you will leverage the power of iCloud to have all your content (such as cards, binders, lists, prices etc) synchronized between your devices.<br />Keep in mind that the larger the change the longer it takes for sync to complete. For instance, if you add a new card on device 'A' you should be seeing that card on device 'B' pretty much instantly. However if you import 1000 cards via CSV it might take a while for them to appear on all devices.</div>
+      <div class="faq-collapse-content collapse" id="icloud"><br />When you enable iCloud Sync by purchasing the 'iCloud Sync' feature you will leverage the power of iCloud to have all your content (such as cards, binders, lists, prices etc) synchronized between your devices.<br />Keep in mind that the larger the change the longer it takes for sync to complete. For instance, if you add a new card on device 'A' you should be seeing that card on device 'B' pretty much instantly. However if you import 1000 cards via CSV it might take a while for them to appear on all devices.<br /><br />You can check the iCloud Sync status of your device by doing the following:<br /><br />1. Open the Helvault app<br />2. On the 'Collections' area, go to Settings (three-dotted button on the top left corner)<br />3. Scroll down and tap 'iCloud Syncing'</div>
     </div>
   
   
     <div class="faq-collapse-item">
-      <a class="faq-collapse-btn" data-bs-toggle="collapse" href="#icloudFix">My iCloud sync isn't working. What can I do?</a>
+      <a class="faq-collapse-btn" data-bs-toggle="collapse" href="#icloudThrottle">iCloud Sync is taking too long... What's going on?</a>
+      <div class="faq-collapse-content collapse" id="icloudThrottle"><br />When you import a large amount of data at once (such as a long CSV file, or backup from the Legacy app) iCloud will automatically throttle the rate of the data transfer to preserver their servers stability. Unfortunately this is not something Helvault can control, all apps (including Apple's own) are affected by this process. Moreover, completion time does not appear to be linear so the more you sync at once the longer it will take.<br /><br />Here are some estimations you might use as guide:<br /><br />- Collection with 500 cards should finish uploading in about a minute<br />- Collection with 3,000 cards should finish uploading in about 5 minutes<br />- Collection with 14,000 cards should finish uploading in about 4.5 hours<br /><br />Keep in mind that these numbers may vary considerably depending on a number of factors such as iCloud servers availability, your internet connection speed, your physical distance to iCloud servers and more.</div>
+    </div>
+  
+  
+    <div class="faq-collapse-item">
+      <a class="faq-collapse-btn" data-bs-toggle="collapse" href="#icloudFix">iCloud Sync isn't working. What can I do?</a>
       <div class="faq-collapse-content collapse" id="icloudFix"><br />If you have purchased the 'iCloud Sync' feature and suspect that content is not syncing properly between devices, here are some things you can do:<br /><br />1. Verify that you are signed-in with iCloud on your device. More details <a href="https://support.apple.com/en-gb/guide/icloud/mmfc0f1e2a/1.0/icloud/1.0" target="_blank">here</a>.<br />2. Within the app, go to <code>Settings → iCloud Syncing</code> and check that <code>iCloud Account</code> is displayed as <code>Available</code> and <code>Setup</code> displays as <code>Successful</code>. If any of these are displayed otherwise, check step <code>1</code> above.<br />3. Make sure that Helvault has permissions to use iCloud. You can do so by going to <code>Settings → [your name] → iCloud → Show All (under the APPS USING ICLOUD section)</code>. On this page the toggle should be turned ON for Helvault. If you cannot reach this page, check step <code>1</code> above.</div>
     </div>
   
