@@ -42,7 +42,7 @@ Below you'll find answers to common questions you may have about Helvault. If yo
 
 {% assign titles = titles | push: "What new features should I expect on the new app?" %}
 {% assign hrefs = hrefs | push: "newFeatures" %}
-{% assign descriptions = descriptions | push: "1. Added support for iCloud Sync, one of the most requested featured by the community<br/>2. iPad support<br/>3. Mac support<br/>4. Added new filter and sorting options on the Collection section<br/>5. Improved pricing support with much faster reload<br/>6. Reworked the scanner so it supports offline scanning <i>(offline scanning is not yet available, will be coming soon on a future update)</i>" %}
+{% assign descriptions = descriptions | push: "1. Added support for iCloud Sync, one of the most requested featured by the community<br/>2. Added iPad support<br/>3. Added Mac support<br/>4. Added new filtering and sorting options on the Collection section<br/>5. Improved pricing support with much faster reload<br/>6. Reworked the scanner so it supports offline scanning <i>(offline scanning is not yet available, will be coming soon on a future update)</i>" %}
 
 
 {% assign titles = titles | push: "Why my purchases from the Legacy app are not restored on the new app?" %}
