@@ -32,17 +32,22 @@ Below you'll find answers to common questions you may have about Helvault. If yo
 
 {% assign titles = titles | push: "Why there's a new Helvault app instead of just updating the old one?" %}
 {% assign hrefs = hrefs | push: "new" %}
-{% assign descriptions = descriptions | push: "We appreciate the support and would like to clarify the reasons behind the creation of the new Helvault.<br/>First of all, we understand how depreciative a subscription based model is to users, and that is why we do not (and will never) implement recurring subscriptions on the app. However, development of new features + maintenance takes time and money. We needed a way to keep new stuff coming in without abusing users with recurring charges.<br/><br/>The solution was to create a new app from scratch. Existing users have the option to upgrade and take advantage of the new features if they want, otherwise they can stick to the old app and use what they already paid for.<br/><br/>In short, if you want new stuff and would like to support the future of the app, the new Helvault is here for you! Otherwise keep using the old app and no hard feelings." %}
+{% assign descriptions = descriptions | push: "We appreciate the support and would like to clarify the reasons behind the need for creating a new Helvault.<br/>First of all, we understand how depreciative a subscription based model is to users, and that is why we do not have recurring subscriptions on the app. However, development of new features + maintenance takes time and money. We needed a way to keep new stuff coming in without forcing users to keep paying.<br/><br/>The solution was to implement an 'opt-in' style where you are free to continue using what you paid for, but in case the new stuff brings enough value you can decide to upgrade to the new app. This works by keeping the 'current' (now legacy) app working just as expected, but also bringing a new one so users who see enough value can move to.<br/><br/>In short, if the new app and its features bring value to you and you'd like to support the future of Helvault, welcome aboard! Otherwise you have all the means to keep using the legacy app for as long as you please." %}
 
 
 {% assign titles = titles | push: "Will Helvault Legacy stop working?" %}
 {% assign hrefs = hrefs | push: "legacy" %}
-{% assign descriptions = descriptions | push: "No! The app will continue to work normally. The only change is that it will no longer receive updates." %}
+{% assign descriptions = descriptions | push: "No! The app will continue to work normally, receiving maintenance updates in case a new OS update introduces bugs. The only change is that it will no longer receive feature updates." %}
+
+
+{% assign titles = titles | push: "What new features should I expect on the new app?" %}
+{% assign hrefs = hrefs | push: "newFeatures" %}
+{% assign descriptions = descriptions | push: "1. Added support for iCloud Sync, one of the most requested featured by the community<br/>2. iPad support<br/>3. Mac support<br/>4. Added new filter and sorting options on the Collection section<br/>5. Improved pricing support with much faster reload<br/>6. Reworked the scanner so it supports offline scanning <i>(offline scanning is not yet available, will be coming soon on a future update)</i>" %}
 
 
 {% assign titles = titles | push: "Why my purchases from the Legacy app are not restored on the new app?" %}
 {% assign hrefs = hrefs | push: "restore" %}
-{% assign descriptions = descriptions | push: "As mentioned above, the Legacy app will continue to work normally, as is, so your purchases are and will always be yours. With that being said, by AppStore rules purchases cannot be carried over between apps. In case the new app is right for you, items will need to be purchased separately." %}
+{% assign descriptions = descriptions | push: "As mentioned above, the Legacy app will continue to work normally, as is, so your purchases are and will always be yours. With that being said, by AppStore rules purchases cannot be carried over between apps. In case the new app has value to you, items will need to be purchased separately." %}
 
 
 {% assign titles = titles | push: "Why can't I add some cards in languages other than English?" %}
