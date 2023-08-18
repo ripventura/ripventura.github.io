@@ -3,7 +3,7 @@
 	"file": "colors-auto.css",
 	"sources": [
 		"colors-auto.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230817-97909-1lxuqcu/_sass/colors.scss"
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/colors.scss"
 	],
 	"sourcesContent": [
 		"@import \"colors\";\n\n:root {\n    @include colors;\n    @include light-colors;\n  }\n\n@media screen and (prefers-color-scheme: dark) {//we would not like to apply dark mode if content is on printer as that would use a lot of ink\n  :root{\n    @include dark-colors;\n  }\n}",
