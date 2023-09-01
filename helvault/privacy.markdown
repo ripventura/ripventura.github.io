@@ -2,12 +2,14 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
+title: Helvault - Privacy
 layout: default
 ---
 <html>
 	<head><link rel="stylesheet" href="style.css"></head>
 </html>
-# Privacy
+
+# Helvault Privacy
 
 Helvault respects your right to privacy. This Privacy Policy explains who we are, how we collect, share and use personal information about you, and how you can exercise your privacy rights.
 

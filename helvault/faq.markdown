@@ -2,6 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
+title: Helvault - FAQ
+description: Testing
 layout: default
 ---
 <html>
@@ -22,7 +24,7 @@ layout: default
   </script>
 </html>
 
-# FAQ
+# Helvault FAQ
 Below you'll find answers to common questions you may have about Helvault. If you need extra support consider [reaching us out]({{site.helvault_support_form}}) or [joining our Discord server](https://discord.gg/WMWNpmcg35).
 
 {% assign titles = "" | split: "" %}
@@ -53,6 +55,11 @@ Below you'll find answers to common questions you may have about Helvault. If yo
 {% assign titles = titles | push: "How can I migrate my content from the Legacy app to the new one?" %}
 {% assign hrefs = hrefs | push: "migrate" %}
 {% assign descriptions = descriptions | push: "You can migrate your content (cards, binders and lists) from the Legacy app to the new one by doing the following:<br/>1. Open the new Helvault app<br/>2. On the 'Collections' area, go to Settings (three-dotted button on the top left corner)<br/>3. Scroll down and tap 'Import from Helvault Legacy'<br/><br/>That's it! Now you just need to follow on-screen instructions." %}
+
+
+{% assign titles = titles | push: "Some cards from newly released sets are missing... Why?" %}
+{% assign hrefs = hrefs | push: "newCards" %}
+{% assign descriptions = descriptions | push: "Helvault uses Scryfall as a provider for cards. Usually newly released sets are added pretty quickly (specially on the English language), but sometimes delays may happen.<br/><br/>You could also <a href='https://scryfall.com/contact'>reach Scryfall directly</a> to get a sense of when your cards will be added." %}
 
 
 {% assign titles = titles | push: "Why can't I add some cards in languages other than English?" %}

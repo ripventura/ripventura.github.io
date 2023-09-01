@@ -3,7 +3,7 @@
 	"file": "colors-auto-default-dark.css",
 	"sources": [
 		"colors-auto-default-dark.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/colors.scss"
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230901-91853-8b4a3c/_sass/colors.scss"
 	],
 	"sourcesContent": [
 		"//this mode is like colors-auto but if the device does not support @media prefers-color-scheme it will deafault to dark mode\n\n@import \"colors\";\n\n:root {\n    @include colors;\n    @include dark-colors;\n  }\n\n@media print, (prefers-color-scheme: light) {//we would not like to apply dark mode if content is on printer as that would use a lot of ink\n  :root {\n    @include light-colors;\n  }\n}",

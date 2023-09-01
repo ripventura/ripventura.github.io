@@ -3,11 +3,11 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/minimalist.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/jekyll-theme-minimalist.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/fonts.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/rouge-github.scss",
-		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230818-99519-12j1m2c/_sass/colors.scss"
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230901-91853-8b4a3c/_sass/minimalist.scss",
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230901-91853-8b4a3c/_sass/jekyll-theme-minimalist.scss",
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230901-91853-8b4a3c/_sass/fonts.scss",
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230901-91853-8b4a3c/_sass/rouge-github.scss",
+		"../../../../private/var/folders/3s/p7rf7zy14jn9p478sjk_bv7m0000gn/T/jekyll-remote-theme-20230901-91853-8b4a3c/_sass/colors.scss"
 	],
 	"sourcesContent": [
 		"// https://github.com/BDHU/minimalist/blob/main/_sass/colors.scss\n\n:root {\n\t--clr-bg: #242E38; // Background\n\t--clr-text: #FCFBFC; // Text\n\t--clr-a-text: rgb(126, 160, 196); // Link\n\t--clr-a-text-hvr: rgb(41, 151, 255); // Link - Hover\n}\n\n@import \"minimalist\";",

@@ -5,6 +5,8 @@
 layout: default
 ---
 
+_Senior iOS Engineer touching people's lives through technology since 2010._
+
 ## Resume
 You can find below my resume with an overview of my professional experience.
 

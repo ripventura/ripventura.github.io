@@ -1,4 +1,4 @@
-## How to run this shit
+## How to
 
 1. `sudo gem install bundler jekyll` (may need to update ruby with `brew upgrade ruby `)
 2. `bundle install`
