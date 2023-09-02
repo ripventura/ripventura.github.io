@@ -1,7 +1,13 @@
 [
 	{
-		"id": "2023-09-02",
+		"id": "1",
 		"title": "Heads up!",
+		"message": "There's a known issue on Scryfall's API, our database provider, where cards are missing prices (even though price estimations are available).\nWe’ve already reached out their support team and are awaiting for a fix.\n\nIn the meantime your collection will display unrealistic low prices after a price reload.\nAs soon as the issues is resolved the app should start loading proper prices again.\n\nApologies for the inconvenience.",
+		"button": "Understood"
+	},
+	{
+		"id": "2",
+		"title": "Heads down!",
 		"message": "There's a known issue on Scryfall's API, our database provider, where cards are missing prices (even though price estimations are available).\nWe’ve already reached out their support team and are awaiting for a fix.\n\nIn the meantime your collection will display unrealistic low prices after a price reload.\nAs soon as the issues is resolved the app should start loading proper prices again.\n\nApologies for the inconvenience.",
 		"button": "Understood"
 	}
