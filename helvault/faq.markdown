@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Helvault - FAQ
-description: Testing
+description: Answers to frequently asked questions about Helvault
 layout: default
 ---
 <html>
