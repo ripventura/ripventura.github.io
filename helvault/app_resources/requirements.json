@@ -1,6 +1,6 @@
 {
 	"blacklist": {
-		"message": "There's a new, mandatory version update for Helvault. Please open the AppStore and update Helvault.\nThank you.",
-		"versions": ["1.11", "1.13"]
+		"message": "There's a new, mandatory version update for Helvault. Please open the AppStore app and update Helvault.\nThank you!",
+		"versions": ["1.11"]
 	}
 }
