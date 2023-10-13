@@ -1,8 +1,8 @@
-[
-	{
-		"id": "2023-10-00",
-		"title": "Attention!",
-		"message": "There's a known issue with version 1.11 of the app. Please make sure you are using version 1.12 by opening the AppStore app and checking for pending app updates.\nThank you!",
-		"button": "Understood"
-	}
-]
+// [
+// 	{
+// 		"id": "2023-10-00",
+// 		"title": "Attention!",
+// 		"message": "There's a known issue with version 1.11 of the app. Please make sure you are using version 1.12 by opening the AppStore app and checking for pending app updates.\nThank you!",
+// 		"button": "Understood"
+// 	}
+// ]
