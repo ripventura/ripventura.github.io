@@ -1,12 +1,12 @@
 {
 	"version": 1,
 	"data": [
-		{ "set": { "oldCode": "PLIST", "newCode": "PLST" } },
-		{ "set": { "oldCode": "PAGL", "newCode": "PLST" } },
-		{ "set": { "oldCode": "PHED", "newCode": "PLST" } },
-		{ "set": { "oldCode": "PCTB", "newCode": "PLST" } },
-		{ "set": { "oldCode": "MB1", "newCode": "PLST" } },
-		{ "set": { "oldCode": "FMB1", "newCode": "PLST" } },
-		{ "set": { "oldCode": "ULIST", "newCode": "ULST" } }
+		{ "set": { "oldCode": "plist", "newCode": "plst" } },
+		{ "set": { "oldCode": "pagl", "newCode": "plst" } },
+		{ "set": { "oldCode": "phed", "newCode": "plst" } },
+		{ "set": { "oldCode": "pctb", "newCode": "plst" } },
+		{ "set": { "oldCode": "mb1", "newCode": "plst" } },
+		{ "set": { "oldCode": "fmb1", "newCode": "plst" } },
+		{ "set": { "oldCode": "ulist", "newCode": "ulst" } }
 	]
 }
