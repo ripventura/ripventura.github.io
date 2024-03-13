@@ -1,5 +1,5 @@
 {
-	"version": 1,
+	"version": 2,
 	"data": [
 		{ "set": { "oldCode": "plist", "newCode": "plst" } },
 		{ "set": { "oldCode": "pagl", "newCode": "plst" } },
