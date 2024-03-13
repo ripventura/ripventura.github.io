@@ -1,12 +1,12 @@
 {
 	"version": 1,
 	"data": [
-		{ "set": "PLIST" },
-		{ "set": "PAGL" },
-		{ "set": "PHED" },
-		{ "set": "PCTB" },
-		{ "set": "MB1" },
-		{ "set": "FMB1" },
-		{ "set": "ULIST" }
+		{ "set": { "oldCode": "PLIST", "newCode": "PLST" } },
+		{ "set": { "oldCode": "PAGL", "newCode": "PLST" } },
+		{ "set": { "oldCode": "PHED", "newCode": "PLST" } },
+		{ "set": { "oldCode": "PCTB", "newCode": "PLST" } },
+		{ "set": { "oldCode": "MB1", "newCode": "PLST" } },
+		{ "set": { "oldCode": "FMB1", "newCode": "PLST" } },
+		{ "set": { "oldCode": "ULIST", "newCode": "ULST" } }
 	]
 }
