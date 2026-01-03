@@ -1,8 +1,6 @@
-// [
-// 	{
-// 		"id": "2023-10-00",
-// 		"title": "Attention!",
-// 		"message": "There's a known issue with version 1.11 of the app. Please make sure you are using version 1.12 by opening the AppStore app and checking for pending app updates.\nThank you!",
-// 		"button": "Understood"
-// 	}
-// ]
+[{
+"id": "2025-01-03",
+"title": "Heads up!",
+"message": "We are aware of an issue affecting the scanner, where it might appear stuck on a specific card.\nA fix has been submitted to the AppStore team and will be available soon.",
+"button": "Got it"
+}]
