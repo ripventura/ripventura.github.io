@@ -1,6 +1,6 @@
-[{
-"id": "2025-01-03",
-"title": "Heads up!",
-"message": "We are aware of an issue affecting the scanner, where it might appear stuck on a specific card.\nA fix has been submitted to the AppStore team and will be available soon.",
-"button": "Got it"
-}]
+// [{
+// "id": "2025-01-03",
+// "title": "Heads up!",
+// "message": "We are aware of an issue affecting the scanner, where it might appear stuck on a specific card.\nA fix has been submitted to the AppStore team and will be available soon.",
+// "button": "Got it"
+// }]
