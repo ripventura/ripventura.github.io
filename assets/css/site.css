@@ -364,25 +364,9 @@ h3 {
   letter-spacing: -0.02em;
 }
 
-.tile--now {
-  min-height: 250px;
-  overflow: hidden;
-
-  & > p {
-    position: relative;
-  }
-}
-
-.swift-dots {
-  align-self: flex-end;
-  width: auto;
-  height: 104px;
-  margin: 4px -4px 0 0;
-  fill: none;
-  stroke: var(--muted);
-  stroke-width: 3;
-  stroke-linecap: round;
-  opacity: 0.3;
+.now-years {
+  margin-top: 0.5rem;
+  font-size: clamp(2.5rem, 5vw, 3.25rem);
 }
 
 /* Map */
