@@ -1,0 +1,6 @@
+{%- assign r = site.data.resume -%}
+{%- assign years = site.time | date: "%Y" | minus: r.career_start -%}
+<section class="tile tile--stat" style="--i: 1">
+  <p class="stat-number">{{ years }}<span>+</span></p>
+  <p class="stat-label">years shipping software for Apple platforms</p>
+</section>

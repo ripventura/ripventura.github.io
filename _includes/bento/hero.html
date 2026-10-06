@@ -1,0 +1,11 @@
+{%- assign r = site.data.resume -%}
+<section class="tile tile--hero" style="--i: 0">
+  <div class="avatar" aria-hidden="true">VC</div>
+  <h1>{{ r.name }}</h1>
+  <p class="hero-title">{{ r.title }}</p>
+  <p class="hero-tagline">{{ r.tagline }}</p>
+  <div class="actions">
+    <a class="button button--primary" href="{{ site.resume_path | relative_url }}" download>{% include icon.html name="download" %} Resume PDF</a>
+    <a class="button" href="mailto:{{ site.email }}">{% include icon.html name="mail" %} Email me</a>
+  </div>
+</section>

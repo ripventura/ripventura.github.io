@@ -1,0 +1,23 @@
+---
+layout: home
+---
+<div class="bento">
+  {% include bento/hero.html %}
+  {% include bento/stat.html %}
+  {% include bento/links.html %}
+  {% include bento/now.html %}
+  {% include bento/location.html %}
+  {% include bento/apps.html %}
+  {% include bento/timeline.html %}
+  {% include bento/skills.html %}
+</div>
+
+<script>
+  // Show the current local time in the location tile.
+  document.querySelectorAll(".local-time").forEach((el) => {
+    const fmt = new Intl.DateTimeFormat("en", { hour: "numeric", minute: "2-digit", timeZone: el.dataset.tz, timeZoneName: "short" });
+    const tick = () => { el.textContent = fmt.format(new Date()); };
+    tick();
+    setInterval(tick, 30000);
+  });
+</script>

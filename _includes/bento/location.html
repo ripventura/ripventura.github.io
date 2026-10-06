@@ -1,0 +1,6 @@
+{%- assign r = site.data.resume -%}
+<section class="tile tile--location" style="--i: 4">
+  <p class="eyebrow">{% include icon.html name="pin" %} Based in</p>
+  <p class="location-city">{{ r.location | split: "," | first }}</p>
+  <p class="muted">Brazil · <time class="local-time" data-tz="{{ r.timezone }}">{{ r.timezone_label }}</time></p>
+</section>

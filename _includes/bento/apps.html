@@ -1,0 +1,17 @@
+{%- for app in site.data.resume.apps %}
+<section class="tile tile--app" style="--i: 5">
+  <p class="eyebrow">Indie app</p>
+  <div class="app-header">
+    <img class="app-icon" src="{{ app.icon | relative_url }}" alt="" width="64" height="64" loading="lazy">
+    <div>
+      <h2>{{ app.name }}</h2>
+      <p class="muted">{{ app.subtitle }}</p>
+    </div>
+  </div>
+  <p>{{ app.description }}</p>
+  <div class="actions">
+    <a class="button button--primary" href="{{ app.app_store }}" target="_blank" rel="noopener">{% include icon.html name="apple" %} App Store</a>
+    <a class="button" href="{{ app.support | relative_url }}">Support</a>
+  </div>
+</section>
+{%- endfor %}

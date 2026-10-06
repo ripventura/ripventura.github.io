@@ -1,0 +1,33 @@
+{%- assign r = site.data.resume -%}
+<section class="tile tile--timeline" style="--i: 6" aria-labelledby="experience-title">
+  <div class="tile-header">
+    <h2 id="experience-title">Experience</h2>
+    <a class="text-link" href="{{ site.resume_path | relative_url }}" download>{% include icon.html name="download" %} PDF</a>
+  </div>
+  <p class="summary">{{ r.summary }}</p>
+  <ol class="timeline">
+    {%- for job in r.experience %}
+    <li>
+      <details{% if forloop.first %} open{% endif %}>
+        <summary>
+          <span class="timeline-dates">{{ job.start }} – {{ job.end }}</span>
+          <span class="timeline-role">{{ job.role }}</span>
+          <span class="timeline-company">{{ job.company }}{% if job.note %} <span class="muted">· {{ job.note }}</span>{% endif %}</span>
+          {% include icon.html name="chevron" %}
+        </summary>
+        <ul>
+          {%- for item in job.highlights %}
+          <li>{{ item }}</li>
+          {%- endfor %}
+        </ul>
+      </details>
+    </li>
+    {%- endfor %}
+  </ol>
+  <h3>Previously</h3>
+  <ul class="previous">
+    {%- for item in r.previous %}
+    <li>{{ item }}</li>
+    {%- endfor %}
+  </ul>
+</section>

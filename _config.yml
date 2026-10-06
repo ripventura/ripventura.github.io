@@ -22,10 +22,9 @@ title: Vitor Cesco
 email: vitorcesco@me.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.vitorcesco.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.vitorcesco.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   # Custom theme requirement
@@ -41,9 +40,11 @@ social:
   - name: LinkedIn
     url: "https://linkedin.com/in/vitor-cesco-ios-engineer"
     class: fab fa-linkedin
+    icon: linkedin
   - name: GitHub
     url: "https://github.com/ripventura"
     class: fab fa-github
+    icon: github
 resume_path: /resources/resume/VitorCesco-ENG.pdf
 helvault_support_form: "https://docs.google.com/forms/d/e/1FAIpQLSeKDaqJOwvw5VLmsjKFGMlHS41_heSTkAIZeVWDJwuWYLIOWg/viewform?embedded=true"
 
