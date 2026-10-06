@@ -120,7 +120,8 @@ h3 {
   gap: var(--gap);
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-areas:
-    "hero hero stat links"
+    "hero hero hero stat"
+    "hero hero hero links"
     "now  loc  app  app"
     "time time time skills"
     "time time time edu";
@@ -220,7 +221,7 @@ h3 {
 
 .avatar {
   flex: none;
-  width: clamp(72px, 9vw, 104px);
+  width: clamp(72px, 10vw, 120px);
   height: auto;
   aspect-ratio: 1;
   margin-left: -8px;
@@ -229,7 +230,7 @@ h3 {
 }
 
 .tile--hero h1 {
-  font-size: clamp(2rem, 4.6vw, 3.25rem);
+  font-size: clamp(2rem, 5.5vw, 4rem);
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -0.04em;
