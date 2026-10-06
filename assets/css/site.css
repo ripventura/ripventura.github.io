@@ -364,11 +364,6 @@ h3 {
   letter-spacing: -0.02em;
 }
 
-.now-years {
-  margin-top: 0.5rem;
-  font-size: clamp(2.5rem, 5vw, 3.25rem);
-}
-
 /* Map */
 .tile--location {
   min-height: 250px;

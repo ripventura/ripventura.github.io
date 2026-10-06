@@ -7,8 +7,6 @@
 {%- if now_month < start_month %}{% assign years = years | minus: 1 %}{% endif -%}
 <section class="tile tile--now" style="--i: 3">
   <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Currently</p>
-  <p class="stat-number now-years">{{ years }}<span>+</span></p>
-  <p class="stat-label">years in the role</p>
   <p class="now-company">{% include icon.html name="apple" %} {{ job.company }}</p>
-  <p class="muted">Since {{ start_year }}{% if job.note %} · {{ job.note }}{% endif %}</p>
+  <p class="muted">{{ years }}+ years · since {{ start_year }}{% if job.note %}<br>{{ job.note }}{% endif %}</p>
 </section>
