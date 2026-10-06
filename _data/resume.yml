@@ -1,0 +1,77 @@
+# Single source of truth for the HTML resume on the home page.
+# Keep in sync with resources/resume/VitorCesco-ENG.pdf.
+
+name: Vitor Cesco
+title: Senior Full-Stack Swift Engineer
+tagline: Touching people's lives through technology since 2010.
+career_start: 2010
+city: São José dos Campos, SP
+country: Brazil
+
+summary: >-
+  Senior Full-Stack Swift Engineer with 15+ years of experience delivering scalable
+  mobile and backend solutions across iOS, macOS, visionOS, watchOS and tvOS. Proven
+  expertise in Swift/SwiftUI frontend development and backend technologies including
+  Node.js, TypeScript, Python, and cloud infrastructure. Passionate about technology
+  and Apple's legacy in our community.
+
+skills:
+  - group: Frontend
+    items: [Swift, SwiftUI, UIKit, Combine, async/await, iOS, macOS, visionOS, watchOS, React.js]
+  - group: Backend
+    items: [Node.js, Express, TypeScript, Python, REST, GraphQL]
+  - group: Data & Infra
+    items: [MongoDB, MySQL, AWS, Core Data, CloudKit]
+  - group: Practices
+    items: [Xcode Cloud, GitHub Actions, Git, Agile/Scrum, TDD, Code Review]
+
+experience:
+  - role: Senior Full-Stack Swift Engineer
+    company: Apple Inc.
+    note: contractor via Formula.Monks
+    start: 07/2022
+    end: Present
+    highlights:
+      - Architected and delivered full-stack solutions for iOS, macOS, visionOS, watchOS and tvOS, with Swift/SwiftUI frontends and Python/Node.js backends for 10+ client projects with 2M+ combined users.
+      - Collaborated with product, design and QA to deliver polished, accessible experiences aligned with Apple's HIG.
+      - Built and maintained CI/CD pipelines with Xcode Cloud and GitHub Actions, reducing release time from days to hours.
+      - Owned complex features end-to-end, from frontend UI to backend API performance and database optimization.
+  - role: Senior iOS Engineer & Tech Lead
+    company: BairesDev
+    start: 03/2021
+    end: 07/2022
+    highlights:
+      - Led a team of 5 iOS engineers delivering mission-critical, HIPAA-compliant healthcare apps for a major California-based medical company, with 99.9% uptime.
+      - Mentored junior and mid-level developers, establishing best practices in Swift, UIKit and modular architecture.
+      - Introduced agile practices that improved sprint velocity by 25%.
+  - role: Senior iOS Engineer
+    company: Turtle AI
+    note: early-stage startup
+    start: 10/2018
+    end: 03/2021
+    highlights:
+      - Built iOS apps from 0-to-1 for multiple international startup clients, iterating fast on user feedback.
+      - Architected full-stack solutions with Swift frontends and Node.js backends, working directly with founders to shape product direction.
+      - Frequently served as technical lead, making architecture decisions and mentoring other developers.
+
+previous:
+  - iOS Developer · Lets Events · 2017–2018
+  - iOS Full-Stack Developer · Tyton Holdings · 2014–2017
+  - iOS Developer · Embraer · 2014
+  - Freelance iOS Developer & App Store Publisher · 2010–2014
+
+education:
+  - degree: Bachelor of Computer Engineering
+    school: UNITAU, Universidade de Taubaté
+  - degree: Scientific Research in Physics
+    school: ITA, Aeronautics Institute of Technology
+
+languages: [Portuguese (Native), English (Fluent), Spanish (Intermediate)]
+
+apps:
+  - name: Helvault
+    subtitle: MTG Scanner
+    description: "Collection manager for Magic: The Gathering players, with an AI card scanner, prices, stats and iCloud sync."
+    icon: /assets/img/helvault-icon.jpg
+    app_store: https://apps.apple.com/app/id6451158920
+    support: /helvault/

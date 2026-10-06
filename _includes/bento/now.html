@@ -1,0 +1,6 @@
+{%- assign job = site.data.resume.experience | first -%}
+<section class="tile tile--now" style="--i: 3">
+  <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Currently</p>
+  <p class="now-company">{% include icon.html name="apple" %} {{ job.company }}</p>
+  <p class="muted">Since {{ job.start | split: "/" | last }}{% if job.note %} · {{ job.note }}{% endif %}</p>
+</section>

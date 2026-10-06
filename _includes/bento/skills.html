@@ -1,0 +1,12 @@
+{%- assign r = site.data.resume -%}
+<section class="tile tile--skills" style="--i: 8" aria-labelledby="skills-title">
+  <h2 id="skills-title">Toolbox</h2>
+  {%- for group in r.skills %}
+  <h3>{{ group.group }}</h3>
+  <ul class="chips">
+    {%- for item in group.items %}
+    <li>{{ item }}</li>
+    {%- endfor %}
+  </ul>
+  {%- endfor %}
+</section>

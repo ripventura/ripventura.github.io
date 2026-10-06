@@ -1,0 +1,9 @@
+<nav class="tile tile--links" style="--i: 2" aria-label="Profiles">
+  {%- for social in site.social %}
+  <a class="link-row" href="{{ social.url }}" rel="me noopener" target="_blank">
+    {% include icon.html name=social.icon %}
+    <span>{{ social.name }}</span>
+    {% include icon.html name="arrow" %}
+  </a>
+  {%- endfor %}
+</nav>

@@ -1,0 +1,7 @@
+{%- assign r = site.data.resume -%}
+<section class="tile tile--location" style="--i: 4">
+  <p class="eyebrow">{% include icon.html name="pin" %} Based in</p>
+  {% include bento/map-americas.svg %}
+  <p class="location-country">{{ r.country }}</p>
+  <p class="muted">{{ r.city }}</p>
+</section>

@@ -1,0 +1,39 @@
+{%- assign r = site.data.resume -%}
+{%- capture page_title -%}{% if page.title %}{{ page.title }} · {{ r.name }}{% else %}{{ r.name }} · {{ r.title }}{% endif %}{%- endcapture -%}
+{%- assign page_description = page.description | default: r.summary | strip_newlines | truncate: 160 -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#eef1fb">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0d1a">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/img/og.png' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/assets/img/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ r.name | jsonify }},
+  "jobTitle": {{ r.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "email": {{ site.email | prepend: "mailto:" | jsonify }},
+  "address": { "@type": "PostalAddress", "addressLocality": "São José dos Campos", "addressRegion": "SP", "addressCountry": "BR" },
+  "sameAs": [{% for social in site.social %}{{ social.url | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "knowsAbout": [{% for group in r.skills %}{% for item in group.items %}{{ item | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+}
+</script>
