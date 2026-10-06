@@ -1,6 +1,6 @@
 {%- assign r = site.data.resume -%}
 <section class="tile tile--hero" style="--i: 0">
-  <div class="avatar" aria-hidden="true">VC</div>
+  <img class="avatar" src="{{ "/assets/img/avatar.png" | relative_url }}" alt="Memoji of {{ r.name }}" width="120" height="120">
   <h1>{{ r.name }}</h1>
   <p class="hero-title">{{ r.title }}</p>
   <p class="hero-tagline">{{ r.tagline }}</p>
