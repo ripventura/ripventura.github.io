@@ -41,7 +41,6 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
   color: var(--text);
   font: 400 16px/1.5 var(--font);
   -webkit-font-smoothing: antialiased;
@@ -96,18 +95,29 @@ h3 {
   font-size: 0.875rem;
 }
 
-/* Mesh-gradient backdrop */
-.backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-  background:
-    radial-gradient(40vmax 40vmax at 10% 10%, var(--blob-1), transparent 70%),
-    radial-gradient(45vmax 45vmax at 90% 20%, var(--blob-2), transparent 70%),
-    radial-gradient(40vmax 40vmax at 50% 100%, var(--blob-3), transparent 70%),
-    var(--bg);
-  opacity: 0.9;
+/* Mesh-gradient backdrop, painted on <html> (not a fixed layer) so it covers
+   the whole canvas. Desktop browsers honor `fixed`; iOS ignores it and scrolls
+   it with the page, so the top blobs use pixel offsets to stay near the top. */
+html {
+  --mesh:
+    radial-gradient(40vmax 40vmax at 10% 90px, color-mix(in srgb, var(--blob-1) 90%, var(--bg)), transparent 70%),
+    radial-gradient(45vmax 45vmax at 90% 180px, color-mix(in srgb, var(--blob-2) 90%, var(--bg)), transparent 70%),
+    radial-gradient(40vmax 40vmax at 50% 100%, color-mix(in srgb, var(--blob-3) 90%, var(--bg)), transparent 70%);
+  min-height: 100%;
+  background: var(--mesh), var(--bg);
+  background-attachment: fixed;
+}
+
+/* iOS Safari fills the strips behind its status bar and address bar with the
+   flat background color, so fade the page's top and bottom edges into it. */
+@supports (-webkit-touch-callout: none) {
+  html {
+    background:
+      linear-gradient(var(--bg), transparent 96px),
+      linear-gradient(to top, var(--bg), transparent 96px),
+      var(--mesh),
+      var(--bg);
+  }
 }
 
 /* Layout */
@@ -628,7 +638,6 @@ details {
 }
 
 @media print {
-  .backdrop,
   .actions,
   .tile--links,
   .page-footer {
