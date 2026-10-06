@@ -364,8 +364,24 @@ h3 {
   letter-spacing: -0.02em;
 }
 
-.now-role {
-  font-weight: 600;
+.tile--now {
+  min-height: 250px;
+  overflow: hidden;
+
+  & > p {
+    position: relative;
+  }
+}
+
+.swift-dots {
+  align-self: flex-end;
+  width: auto;
+  height: 104px;
+  margin: 4px -4px 0 0;
+  fill: none;
+  stroke-width: 2.9;
+  stroke-linecap: round;
+  opacity: 0.8;
 }
 
 /* Map */
@@ -505,7 +521,7 @@ details {
   border-radius: 16px;
   transition: background 0.2s;
 
-  &[open],
+  &[open]:not(.closing),
   &:hover {
     background: var(--chip);
   }
@@ -531,7 +547,7 @@ details {
     }
   }
 
-  &[open] summary .icon {
+  &[open]:not(.closing) summary .icon {
     transform: rotate(90deg);
   }
 

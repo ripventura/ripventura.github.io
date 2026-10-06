@@ -12,3 +12,36 @@ layout: home
   {% include bento/skills.html %}
 </div>
 
+
+<script>
+  // Animate the experience entries opening and closing.
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  document.querySelectorAll(".timeline details").forEach((details) => {
+    const body = details.querySelector("ul");
+    let animation;
+    details.querySelector("summary").addEventListener("click", (event) => {
+      if (reduceMotion.matches) return;
+      event.preventDefault();
+      animation?.cancel();
+      const closing = details.open && !details.classList.contains("closing");
+      details.classList.toggle("closing", closing);
+      details.open = true;
+      const height = body.scrollHeight;
+      const frames = [
+        { height: "0px", paddingBottom: "0px", opacity: 0 },
+        { height: `${height}px`, paddingBottom: getComputedStyle(body).paddingBottom, opacity: 1 },
+      ];
+      animation = body.animate(closing ? frames.reverse() : frames, {
+        duration: 320,
+        easing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
+      });
+      body.style.overflow = "hidden";
+      animation.onfinish = () => {
+        body.style.overflow = "";
+        if (closing) details.open = false;
+        details.classList.remove("closing");
+        animation = null;
+      };
+    });
+  });
+</script>
