@@ -188,7 +188,7 @@ h3 {
 }
 
 @media (hover: hover) {
-  .tile:not(.tile--timeline):hover {
+  .tile:hover {
     transform: translateY(-3px);
   }
 }
