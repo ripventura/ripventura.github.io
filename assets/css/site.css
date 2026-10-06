@@ -124,7 +124,7 @@ h3 {
     "hero hero hero links"
     "now  loc  app  app"
     "time time time skills"
-    "time time time edu";
+    "edu  edu  edu  skills";
   align-items: start;
 }
 
@@ -155,14 +155,15 @@ h3 {
       "now  loc"
       "app  app"
       "time time"
-      "skills edu";
+      "edu  edu"
+      "skills skills";
   }
 }
 
 @media (max-width: 640px) {
   .bento {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "hero" "stat" "links" "now" "loc" "app" "time" "skills" "edu";
+    grid-template-areas: "hero" "stat" "links" "now" "loc" "app" "time" "edu" "skills";
   }
 }
 
