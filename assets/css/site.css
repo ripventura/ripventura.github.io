@@ -379,9 +379,10 @@ h3 {
   height: 104px;
   margin: 4px -4px 0 0;
   fill: none;
-  stroke-width: 2.9;
+  stroke: var(--muted);
+  stroke-width: 3;
   stroke-linecap: round;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 /* Map */
