@@ -247,7 +247,6 @@ h3 {
 }
 
 .hero-tagline {
-  max-width: 34ch;
   font-size: 1.0625rem;
   color: var(--muted);
 }

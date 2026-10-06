@@ -1,6 +1,6 @@
 {%- for app in site.data.resume.apps %}
 <section class="tile tile--app" style="--i: 5">
-  <p class="eyebrow">Indie app</p>
+  <p class="eyebrow">{% include icon.html name="apps" %} Indie app</p>
   <div class="app-header">
     <img class="app-icon" src="{{ app.icon | relative_url }}" alt="" width="64" height="64" loading="lazy">
     <div>
