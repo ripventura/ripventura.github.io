@@ -1,13 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-title: Helvault - Privacy
+title: Helvault Privacy
+description: "How Helvault, the Magic: The Gathering collection manager, handles your data: no personal information is collected, only anonymous usage events."
+image: /assets/img/helvault-icon.jpg
 layout: default
 ---
-<html>
-	<head><link rel="stylesheet" href="style.css"></head>
-</html>
 
 # Helvault Privacy
 

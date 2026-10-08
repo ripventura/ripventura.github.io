@@ -28,7 +28,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": {{ "/#person" | absolute_url | jsonify }},
   "name": {{ r.name | jsonify }},
+  "image": {{ "/assets/img/avatar.png" | absolute_url | jsonify }},
   "jobTitle": {{ r.title | jsonify }},
   "url": {{ site.url | jsonify }},
   "email": {{ site.email | prepend: "mailto:" | jsonify }},
@@ -37,3 +39,17 @@
   "knowsAbout": [{% for group in r.skills %}{% for item in group.items %}{{ item | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}]
 }
 </script>
+{%- for app in r.apps %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ app.name | jsonify }},
+  "description": {{ app.description | jsonify }},
+  "url": {{ app.app_store | jsonify }},
+  "image": {{ app.icon | absolute_url | jsonify }},
+  "operatingSystem": "iOS, iPadOS, macOS",
+  "author": { "@id": {{ "/#person" | absolute_url | jsonify }} }
+}
+</script>
+{%- endfor %}

@@ -1,28 +1,19 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-title: Helvault - FAQ
-description: Answers to frequently asked questions about Helvault
+title: Helvault FAQ
+description: "Answers to common questions about Helvault, the Magic: The Gathering collection manager for iPhone, iPad and Mac."
+image: /assets/img/helvault-icon.jpg
 layout: default
+bootstrap: true
 ---
-<html>
-  <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <script type="text/javascript">
-    function openContentIfNeeded() {
-      if (window.location.hash !== "") {
-        const collapseElementList = document.querySelectorAll(window.location.hash)
-        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-      }
+<script>
+  function openContentIfNeeded() {
+    if (window.location.hash !== "") {
+      const collapseElementList = document.querySelectorAll(window.location.hash)
+      const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
     }
-    window.onload = openContentIfNeeded;
-  </script>
-</html>
+  }
+  window.onload = openContentIfNeeded;
+</script>
 
 # Helvault FAQ
 Below you'll find answers to common questions about Helvault. If you need extra support, consider [reaching out to us]({{site.helvault_support_form}}) or [joining our Discord server](https://discord.gg/vD78aV58VZ).
