@@ -26,7 +26,6 @@ url: "https://www.vitorcesco.com" # the base hostname & protocol for your site, 
 
 # Build settings
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   # Custom theme requirement
   - jekyll-remote-theme
@@ -34,6 +33,10 @@ plugins:
 # Custom theme requirement
 remote_theme: BDHU/minimalist@f19d6a6
 color-scheme: dark
+
+# Square Helvault icon is used as the social image on theme (Helvault) pages.
+twitter:
+  card: summary
 
 # My own variables
 
@@ -57,6 +60,8 @@ helvault_support_form: "https://docs.google.com/forms/d/e/1FAIpQLSeKDaqJOwvw5VLm
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+exclude:
+  - readme.md
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
